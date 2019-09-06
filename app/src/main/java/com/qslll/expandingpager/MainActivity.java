@@ -36,6 +36,11 @@ public class MainActivity extends AppCompatActivity implements
     @Bind(R.id.back)
     ViewGroup back;
 
+    private static final String TAG = "MainActivity";
+    Boolean flagClose = true;
+    String currentFragment;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,12 +56,21 @@ public class MainActivity extends AppCompatActivity implements
         ExpandingPagerFactory.setupViewPager(viewPager);
 
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+
+            ExpandingFragment expandingFragment;
+
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-                ExpandingFragment expandingFragment = ExpandingPagerFactory.getCurrentFragment(viewPager);
 //                expandingFragment.
-                if (expandingFragment != null && expandingFragment.isOpenend()) {
-                    expandingFragment.close();
+//                if (expandingFragment != null && expandingFragment.isOpenend()) {
+//                    expandingFragment.close();
+//                }
+
+
+                expandingFragment = ExpandingPagerFactory.getCurrentFragment(viewPager);
+                if (flagClose){
+                    expandingFragment.open();
+                    Log.e(TAG, "onPageScrolled: When view pageer load " + expandingFragment);
                 }
 
 
@@ -68,6 +82,24 @@ public class MainActivity extends AppCompatActivity implements
 
             @Override
             public void onPageScrollStateChanged(int state) {
+                Log.e(TAG, "onPageScrollStateChanged: when swap ");
+
+                ExpandingFragment expandingFragment2 = ExpandingPagerFactory.getCurrentFragment(viewPager);
+
+                if (expandingFragment != null && expandingFragment.isOpenend()) {
+                    Log.e(TAG, "onCreate:open fragment 3 " + expandingFragment.toString());
+                    expandingFragment.close();
+                    currentFragment = expandingFragment.toString();
+                    flagClose = false;
+
+
+                    if (expandingFragment2 != null && expandingFragment2.isOpenend()) {
+                        Log.e(TAG, "onPageScrollStateChanged: 5 " + currentFragment);
+                        expandingFragment2.close();
+//                        flagClose =true;
+                    }
+                }
+
 
             }
         });
@@ -142,8 +174,5 @@ public class MainActivity extends AppCompatActivity implements
         Intent intent = new Intent(MainActivity.this, LoginActivity.class);
         startActivity(intent);
     }
-
-    private static final String TAG = "MainActivity";
-
 
 }

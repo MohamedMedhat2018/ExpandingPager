@@ -7,7 +7,7 @@
     android:background="@drawable/register_bg"
     android:orientation="vertical"
     android:weightSum="10"
-    tools:context=".Register">
+    tools:context=".RegisterActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

@@ -37,7 +37,7 @@ public class TravelExpandingFragment extends ExpandingFragment {
     public TravelExpandingFragment() {
     }
 
-    //    public static TravelExpandingFragment newInstance(Travel travel, Register register) {
+    //    public static TravelExpandingFragment newInstance(Travel travel, RegisterActivity register) {
 //        TravelExpandingFragment fragment = new TravelExpandingFragment();
 //        Bundle args = new Bundle();
 //        args.putParcelable(ARG_TRAVEL, travel);

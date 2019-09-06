@@ -65,7 +65,7 @@ public class FragmentBottom extends Fragment {
     }
 //
 
-//    public static FragmentBottom newInstance(Register register) {
+//    public static FragmentBottom newInstance(RegisterActivity register) {
 //        Bundle args = new Bundle();
 //        FragmentBottom fragmentBottom = new FragmentBottom(onRegisterClick);
 //        args.putParcelable(ARG_REGISTER, register);

@@ -12,7 +12,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class Register extends AppCompatActivity {
+public class RegisterActivity extends AppCompatActivity {
 
     @Bind(R.id.login_btn)
     Button login;
@@ -29,7 +29,7 @@ public class Register extends AppCompatActivity {
 
     @OnClick(R.id.login_btn)
     void loginFromRegister (View view){
-        Intent intent = new Intent(Register.this, LoginActivity.class);
+        Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
 //        overridePendingTransition();
     }
 
