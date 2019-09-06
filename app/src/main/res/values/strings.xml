@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ExpandingPager</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string-array name="cate_list">
+        <item>cate 1</item>
+        <item>cate 2</item>
+        <item>cate 3</item>
+        <item>cate 4</item>
+    </string-array>
+</resources>

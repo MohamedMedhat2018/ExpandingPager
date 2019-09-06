@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="0dp"
+    android:layout_marginTop="0dp"
+    android:id="@+id/rootBottom"
+    android:layout_marginRight="0dp"
+    android:layout_marginBottom="0dp"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+
+
+    >
+
+    <TextView
+        android:id="@+id/register_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ellipsize="marquee"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:text="Are you a Customer ?"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <!--<RelativeLayout-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="NO. 7911847"-->
+    <!--android:textAppearance="?android:attr/textAppearanceSmall" />-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:src="@drawable/stars" />-->
+    <!--</RelativeLayout>-->
+
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/register_button"
+        android:ellipsize="marquee"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:clickable="true"
+        android:text="Login Now"
+        android:textAllCaps="false"
+        android:textColor="@color/white1"
+        android:focusable="true" />
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp">-->
+
+    <!--<ImageView-->
+    <!--android:src="@drawable/icons"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--/>-->
+
+    <!--<ImageView-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:src="@drawable/dots" />-->
+    <!--</RelativeLayout>-->
+
+</LinearLayout>

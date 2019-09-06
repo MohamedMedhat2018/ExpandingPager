@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    android:focusable="false"
+    tools:context=".fragments.FragmentTop">
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        tools:src="@drawable/customer4" />
+
+    <!--<com.devspark.robototextview.widget.RobotoTextView-->
+    <!--android:id="@+id/title"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--tools:text="Seychelles"-->
+    <!--android:textSize="18sp"-->
+    <!--app:typeface="roboto_thin"-->
+    <!--android:textAllCaps="true"-->
+    <!--android:textColor="@android:color/white" />-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shadow"
+        android:clickable="false"
+        android:focusable="false" />
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_marginBottom="20dp"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--&lt;!&ndash;<com.devspark.robototextview.widget.RobotoTextView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_gravity="center_vertical"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="NORTH LAT 36"&ndash;&gt;-->
+    <!--&lt;!&ndash;app:typeface="roboto_medium"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textColor="@android:color/white" />&ndash;&gt;-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:src="@drawable/circle" />-->
+
+    <!--<com.devspark.robototextview.widget.RobotoTextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:text="EAST LNG 97"-->
+    <!--app:typeface="roboto_medium"-->
+    <!--android:textColor="@android:color/white" />-->
+    <!--</LinearLayout>-->
+</RelativeLayout>
